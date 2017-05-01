@@ -35,7 +35,7 @@ import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectUnionOfImpl;
 
 
-public class OntologyOperations_NewSet7 {
+public class OntologyOperations {
 
 	private static OWLOntologyManager manager = null;
 	private static OWLOntology PoContology = null;
@@ -45,7 +45,7 @@ public class OntologyOperations_NewSet7 {
 
 	
 	//Constructor
-	public OntologyOperations_NewSet7(File ontologyFile, List<X3DObject> list) {
+	public OntologyOperations(File ontologyFile, List<X3DObject> list) {
 		initClassVariables(ontologyFile, list);
 	    createIndividuals();
 	    infer();
