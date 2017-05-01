@@ -1,0 +1,2279 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/windows/ontologies/Paris8/2014/Master2ISH/SceneSemantization#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/windows/ontologies/Paris8/2014/Master2ISH/SceneSemantization#"
+     versionIRI="http://www.semanticweb.org/windows/ontologies/Paris8/2014/Master2ISH/SceneSemantization#">
+    <Prefix name="" IRI="http://www.semanticweb.org/windows/ontologies/Paris8/2014/Master2ISH/SceneSemantization#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="ArchitecturalElements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bathroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BedAncient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BedFlat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BedWithHeadBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bedroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Beds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CoffeeTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommonEntities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContainerConical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContainerCubical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContainerSpherical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContainerTubular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContainerTubularBended"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DVDCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DVDPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Disc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DistributionManMade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DistributionNatural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Floor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Floorlamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fridges"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Furniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Glass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lamps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LivingRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Magazine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OneRoomAppartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Painting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhotoFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PieceOfFurniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PieceOfFurnitureModern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PieceOfFurnitures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Planar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Plane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Players"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PlugStandard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Plugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sites"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SmallContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sofa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sofas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Solid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidConical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidCubical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidSpherical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidTubular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidTubularBended"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StandardTableRound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StandardTableSquare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StandardTub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StructureConical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StructureCubical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StructurePlanar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StructureSpherical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StructureTubular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StructureTubularBended"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TVFlat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TVs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tubs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UsualObjects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VaseModern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Wall"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isEven"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isHorizontal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isVertical"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Bathroom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isDefinedBy"/>
+            <Class IRI="Tubs"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="BedAncient"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="SolidCubical"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="3">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">140.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">210.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">130.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">110.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">150.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="BedFlat"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="SolidCubical"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">130.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">210.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">90.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">20.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">70.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="BedWithHeadBoard"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="SolidCubical"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="2">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">130.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">240.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">90.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">110.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Bedroom"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isDefinedBy"/>
+                <Class IRI="Beds"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isDefinedBy"/>
+                <Class IRI="Floor"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isDefinedBy"/>
+                <Class IRI="Wall"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Book"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">12.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">30.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">10.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">22.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">0.008</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">4.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="CoffeeTable"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="Disc"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="Plane"/>
+                </ObjectExactCardinality>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="Plane"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">60.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">60.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">140.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">25.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">50.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="DVDCase"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">18.3</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">18.5</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">12.8</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">13.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">1.3</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">1.5</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="DVDPlayer"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">30.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">45.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">20.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">35.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">3.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">6.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isHorizontal"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Floor"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Plane"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Plane"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&xsd;double">60.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isHorizontal"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Floorlamp"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="Disc"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="Plane"/>
+                </ObjectExactCardinality>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="Disc"/>
+                    <Class IRI="Plane"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">100.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">220.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">30.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">70.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">25.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">70.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Fridge"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">70.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">210.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">60.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">90.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">60.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">90.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Glass"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">7.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">17.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">7.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">10.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">7.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">10.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Kitchen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isDefinedBy"/>
+            <Class IRI="Fridges"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="LivingRoom"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="isDefinedBy"/>
+                    <Class IRI="Sofas"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="isDefinedBy"/>
+                    <Class IRI="TVs"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isDefinedBy"/>
+                <Class IRI="Floor"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isDefinedBy"/>
+                <Class IRI="Wall"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Magazine"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">18.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">32.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">14.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">23.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">0.4</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">0.75</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="OneRoomAppartment"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Bedroom"/>
+            <Class IRI="LivingRoom"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Painting"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">15.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">250.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">20.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">140.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">1.5</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxExclusive">
+                            <Literal datatypeIRI="&xsd;double">5.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="PhotoFrame"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">18.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">35.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">15.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">20.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">1.5</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">6.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="PieceOfFurniture"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="SolidCubical"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">50.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">260.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">50.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">100.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">35.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="PieceOfFurnitureModern"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">50.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">260.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">45.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">100.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">35.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="PlugStandard"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">6.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">11.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">6.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">11.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">0.3</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">2.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="SmallContainer"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Container"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Container"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">15.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">40.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">15.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">40.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">7.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">25.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Sofa"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="SolidCubical"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="2">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">120.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">350.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">110.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">70.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">100.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="StandardTableRound"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="Disc"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Disc"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">65.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">75.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="StandardTableSquare"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidTubular"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="Plane"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Plane"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">220.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">120.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">65.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">75.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="StandardTub"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="ContainerCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="ContainerCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">90.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">180.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">50.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">40.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">55.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="TVFlat"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="SolidCubical"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">60.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">120.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">40.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">80.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">6.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">15.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="VaseModern"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="SolidConical"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="SolidCubical"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="isComposedOf"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectExactCardinality>
+            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <ObjectUnionOf>
+                    <Class IRI="SolidConical"/>
+                    <Class IRI="SolidCubical"/>
+                    <Class IRI="SolidTubular"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">20.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">50.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMiddleValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">8.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">20.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMinValueOf"/>
+                <DataIntersectionOf>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;minInclusive">
+                            <Literal datatypeIRI="&xsd;double">8.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:double"/>
+                        <FacetRestriction facet="&xsd;maxInclusive">
+                            <Literal datatypeIRI="&xsd;double">25.0</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataIntersectionOf>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Wall"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Plane"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="isComposedOf"/>
+                <Class IRI="Plane"/>
+            </ObjectExactCardinality>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="hasBoundingBoxMaxValueOf"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&xsd;double">200.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="isVertical"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="ArchitecturalElements"/>
+        <Class IRI="CommonEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bathroom"/>
+        <Class IRI="Sites"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BedAncient"/>
+        <Class IRI="Beds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BedFlat"/>
+        <Class IRI="Beds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BedWithHeadBoard"/>
+        <Class IRI="Beds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bedroom"/>
+        <Class IRI="Sites"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Beds"/>
+        <Class IRI="Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Book"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CoffeeTable"/>
+        <Class IRI="Tables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Container"/>
+        <Class IRI="Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContainerConical"/>
+        <Class IRI="Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContainerCubical"/>
+        <Class IRI="Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContainerSpherical"/>
+        <Class IRI="Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContainerTubular"/>
+        <Class IRI="Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContainerTubularBended"/>
+        <Class IRI="Container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DVDCase"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DVDPlayer"/>
+        <Class IRI="Players"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Disc"/>
+        <Class IRI="Planar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Distribution"/>
+        <Class IRI="Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DistributionManMade"/>
+        <Class IRI="Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DistributionNatural"/>
+        <Class IRI="Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Equipment"/>
+        <Class IRI="CommonEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Floor"/>
+        <Class IRI="ArchitecturalElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Floorlamp"/>
+        <Class IRI="Lamps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Fridge"/>
+        <Class IRI="Fridges"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Fridges"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Furniture"/>
+        <Class IRI="CommonEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Glass"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Kitchen"/>
+        <Class IRI="Sites"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lamps"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LivingRoom"/>
+        <Class IRI="Sites"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Magazine"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OneRoomAppartment"/>
+        <Class IRI="Sites"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Painting"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhotoFrame"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PieceOfFurniture"/>
+        <Class IRI="PieceOfFurnitures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PieceOfFurnitureModern"/>
+        <Class IRI="PieceOfFurnitures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PieceOfFurnitures"/>
+        <Class IRI="Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Planar"/>
+        <Class IRI="Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Plane"/>
+        <Class IRI="Planar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Players"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PlugStandard"/>
+        <Class IRI="Plugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Plugs"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SmallContainer"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sofa"/>
+        <Class IRI="Sofas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sofas"/>
+        <Class IRI="Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Solid"/>
+        <Class IRI="Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidConical"/>
+        <Class IRI="Solid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidCubical"/>
+        <Class IRI="Solid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidSpherical"/>
+        <Class IRI="Solid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidTubular"/>
+        <Class IRI="Solid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidTubularBended"/>
+        <Class IRI="Solid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StandardTableRound"/>
+        <Class IRI="Tables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StandardTableSquare"/>
+        <Class IRI="Tables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StandardTub"/>
+        <Class IRI="Tubs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Structure"/>
+        <Class IRI="Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StructureConical"/>
+        <Class IRI="Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StructureCubical"/>
+        <Class IRI="Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StructurePlanar"/>
+        <Class IRI="Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StructureSpherical"/>
+        <Class IRI="Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StructureTubular"/>
+        <Class IRI="Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StructureTubularBended"/>
+        <Class IRI="Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TVFlat"/>
+        <Class IRI="TVs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TVs"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tables"/>
+        <Class IRI="Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tubs"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UsualObjects"/>
+        <Class IRI="CommonEntities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="VaseModern"/>
+        <Class IRI="UsualObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wall"/>
+        <Class IRI="ArchitecturalElements"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="CommonEntities"/>
+        <Class IRI="Components"/>
+        <Class IRI="Sites"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Disc"/>
+        <Class IRI="Plane"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="SolidConical"/>
+        <Class IRI="SolidCubical"/>
+        <Class IRI="SolidSpherical"/>
+        <Class IRI="SolidTubular"/>
+        <Class IRI="SolidTubularBended"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BedFlat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vérifier l&apos;orientation de l&apos;objet pour faire correspondre (X,Y) avec (Width, Depth)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedOf permet de lier les sous-parties d&apos;un objet</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
